@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:titleTextColor="@color/white"
+            app:title="@string/app_name"
+
+            android:title="@string/app_name"/>
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="55dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/materialheader" />
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:background="@drawable/college_profile_circular_imageborder"
+            android:elevation="5dp"
+            android:padding="20dp"
+             />
+
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:background="#ebca0707"
+            android:elevation="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="24dp">
+
+
+
+            <TextView
+                android:id="@+id/college_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="76dp"
+                android:text="College Name"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                android:id="@+id/college_profile_short_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/college_profile_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="College address"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="List of Branches"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:padding="16dp"
+                />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="7dp"
+                android:layout_marginBottom="20dp"
+
+                >
+            <TextView
+                android:id="@+id/branch_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="asdf"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#000"
+                android:padding="16dp"
+                />
+            </android.support.v7.widget.CardView>
+            <Button
+                android:id="@+id/viewevent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="30dp"
+                android:text="View Events"
+                android:textColor="#ff6600"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/addeventprofile"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="Add Event"
+                android:textColor="#ff6600"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

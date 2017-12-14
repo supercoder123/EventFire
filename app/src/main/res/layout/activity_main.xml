@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2dd">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:titleTextColor="@color/white"
+        app:title="@string/app_name"
+
+        android:title="@string/app_name"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eventfire.ashley.eventfire.MainActivity"
+    >
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="56dp"
+       android:padding="10dp"
+       android:textSize="20dp"
+       android:textColor="#fff"
+       android:fontFamily="n"
+       android:id="@+id/usernamemain"
+       android:text="welcome"
+       android:background="#cf8d7b"
+       />
+
+
+<!--
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:layout_marginTop="56dp"
+    android:text="                    filter                   "
+    android:id="@+id/filter"
+    android:background="#578970"
+        android:gravity="center"
+
+    />
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/myEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/filter"
+            android:layout_marginTop="56dp"
+            android:text="                   My Events                 "
+            android:background="#578970"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+
+            />-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/collegeRecycler"
+        android:layout_marginTop="102dp"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+
+
+        />
+
+
+
+</RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_gravity="bottom|end"
+        android:tint="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:borderWidth="0dp"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:elevation="0dp" />
+
+</android.support.design.widget.CoordinatorLayout>

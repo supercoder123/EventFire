@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "124255835433",
+    "firebase_url": "https://eventfire-27049.firebaseio.com",
+    "project_id": "eventfire-27049",
+    "storage_bucket": "eventfire-27049.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124255835433:android:887c34cbee0f1798",
+        "android_client_info": {
+          "package_name": "com.eventfire.ashley.eventfire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124255835433-kda2jv90ttd3snu9svfue10ts5pv9k86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eventfire.ashley.eventfire",
+            "certificate_hash": "1e31a87ddee48a5f5e17399ae782071e4e157b88"
+          }
+        },
+        {
+          "client_id": "124255835433-74d9am91o7rklvh5arm1rhulj2e0asnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQfsiDXOYozoNr4tJFGhd8N7u9SjkGjk0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124255835433-74d9am91o7rklvh5arm1rhulj2e0asnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
